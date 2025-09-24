@@ -1,0 +1,20 @@
+echo "git checkout -b feature-update" >> commands.txt
+echo "mkdir reports" >> commands.txt
+echo "touch reports/summary.md" >> commands.txt
+echo "echo 'This document provides a summary of the project updates.' > reports/summary.md" >> commands.txt
+echo "git add reports" >> commands.txt
+echo "git commit -m 'Add reports directory'" >> commands.txt
+echo "touch reports/{file1.txt,file2.txt,file3.txt}" >> commands.txt
+echo "mv data/raw-data.csv data/input-data.csv" >> commands.txt
+echo "mkdir scripts/backup && cp scripts/*.py scripts/backup/" >> commands.txt
+echo "rm docs/documentation.md" >> commands.txt
+echo "git add ." >> commands.txt
+echo "git commit -m 'Update project files'" >> commands.txt
+echo -e "echo -e 'temp/\\ndataset0?.csv' > .gitignore" >> commands.txt
+echo "cat .gitignore" >> commands.txt
+echo "git add .gitignore" >> commands.txt
+echo "git commit -m 'Add .gitignore file'" >> commands.txt
+echo "git checkout main" >> commands.txt
+echo "git merge feature-update" >> commands.txt
+echo "git push origin main" >> commands.txt
+
